@@ -1,40 +1,51 @@
 /* Paleta de colores */
 :root {
-    --rosa-principal: #FF77FF; /* Rosa brillante */
-    --azul-negro: #222; /* Azul oscuro */
+    --azul-claro: #3a7bd5; /* Azul claro */
+    --azul-medio: #1e4b89; /* Azul medio */
+    --azul-oscuro: #162d3f; /* Azul oscuro */
     --gris-claro: #F5F5F5; /* Gris claro */
-    --neon-verde: #00FF00; /* Verde neón */
 }
 
-/* Fondo estilo digital con gradiente azul y verde */
+/* Fondo estilo digital con gradiente azul y oscuro */
 body {
-    background: linear-gradient(135deg, #1e1e2f, #00FF00); /* Gradiente azul y verde */
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente de azul claro a azul oscuro */
     background-size: cover;
     background-position: center;
     color: var(--gris-claro); /* Textos claros para contraste */
     font-family: Arial, sans-serif; /* O una fuente digital si la prefieres */
 }
 
-/* Títulos */
+/* Estilos para el título */
 h1 {
     font-size: 4rem; /* Título más grande */
-    background: linear-gradient(to right, #FF77FF, #222); /* Gradiente de rosa y azul */
+    background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro)); /* Gradiente de azul claro y oscuro */
     -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
     color: transparent; /* Hace que el texto sea transparente para que se vea el gradiente */
     text-align: center; /* Centra el título */
-    text-shadow: 0 0 10px #00FF00, 0 0 20px #FF77FF; /* Efecto de neón alrededor del texto */
+    text-shadow: 0 0 10px var(--azul-claro), 0 0 20px var(--azul-medio); /* Efecto de neón alrededor del texto */
 }
 
+/* Estilo para subtítulos */
 h2, h3 {
-    color: var(--rosa-principal);
-    text-shadow: 0 0 10px var(--neon-verde); /* Efecto de neón para subtítulos */
+    color: var(--azul-claro);
+    text-shadow: 0 0 10px var(--azul-medio); /* Efecto de neón para subtítulos */
+}
+
+/* Estilo para el subtítulo en el header */
+header p {
+    font-size: 2.5rem; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hacer el texto más grueso */
+    color: var(--azul-claro); /* Color azul claro */
+    text-align: center; /* Centra el subtítulo */
+    text-shadow: 0 0 10px var(--azul-claro), 0 0 20px var(--azul-medio); /* Efecto de neón alrededor del texto */
+    margin-top: 10px; /* Añadir un poco de espacio arriba */
 }
 
 /* Botones */
 button {
-    background-color: var(--rosa-principal);
+    background-color: var(--azul-claro);
     color: var(--gris-claro);
-    border: 2px solid var(--neon-verde);
+    border: 2px solid var(--azul-oscuro);
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -43,16 +54,16 @@ button {
 }
 
 button:hover {
-    background-color: var(--neon-verde);
+    background-color: var(--azul-oscuro);
     transform: scale(1.05);
 }
 
 /* Enlaces */
 a {
-    color: var(--rosa-principal);
+    color: var(--azul-claro);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--neon-verde);
+    color: var(--azul-oscuro);
 }
