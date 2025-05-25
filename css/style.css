@@ -15,7 +15,7 @@ body {
     font-family: Arial, sans-serif; /* O una fuente digital si la prefieres */
 }
 
-/* Títulos */
+/* Estilos para el título */
 h1 {
     font-size: 4rem; /* Título más grande */
     background: linear-gradient(to right, #FF77FF, #222); /* Gradiente de rosa y azul */
