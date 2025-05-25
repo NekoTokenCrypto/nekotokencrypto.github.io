@@ -30,6 +30,16 @@ h2, h3 {
     text-shadow: 0 0 10px var(--neon-verde); /* Efecto de neón para subtítulos */
 }
 
+/* Estilo para el subtítulo en el header */
+header p {
+    font-size: 2.5rem; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hacer el texto más grueso */
+    color: #FF77FF; /* Un color rosa que combine con el diseño */
+    text-align: center; /* Centra el subtítulo */
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #FF77FF; /* Efecto de neón alrededor del texto */
+    margin-top: 10px; /* Añadir un poco de espacio arriba */
+}
+
 /* Botones */
 button {
     background-color: var(--rosa-principal);
