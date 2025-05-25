@@ -76,7 +76,7 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     gap: 20px;
 }
 
@@ -97,6 +97,33 @@ header p {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Asegurarse de que el texto y la imagen se apilen en pantallas más pequeñas */
+    .contenido-seccion {
+        flex-direction: column; /* Hace que los elementos se apilen verticalmente */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    /* Reducir el tamaño de las imágenes en pantallas más pequeñas */
+    .contenido-seccion .imagen-principal img {
+        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    /* Ajustar el tamaño del texto */
+    .contenido-seccion .texto {
+        padding: 20px;
+    }
+
+    #acerca-de h2 {
+        font-size: 2.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    header p {
+        font-size: 1.5rem; /* Reducir el tamaño del subtítulo en pantallas pequeñas */
+    }
 }
 
 /* Estilo para subtítulos (h2, h3) */
