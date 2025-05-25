@@ -1,23 +1,50 @@
+/* Paleta de colores */
+:root {
+    --rosa-principal: #FF77FF; /* Rosa brillante */
+    --azul-negro: #222; /* Azul oscuro */
+    --gris-claro: #F5F5F5; /* Gris claro */
+    --neon-verde: #00FF00; /* Verde neón */
+}
+
+/* Fondo estilo digital con patrones */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff0f5;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    background-color: var(--azul-negro);
+    background-image: url('assets/digital-pattern.png'); /* Asegúrate de tener un patrón digital */
+    background-size: cover;
+    background-position: center;
+    color: var(--gris-claro); /* Textos claros para contraste */
+    font-family: Arial, sans-serif; /* O una fuente digital si la prefieres */
 }
-header {
-  background-color: #ffb6c1;
-  color: white;
-  text-align: center;
-  padding: 1em;
+
+/* Títulos */
+h1, h2, h3 {
+    color: var(--rosa-principal);
+    text-shadow: 0 0 10px var(--neon-verde); /* Efecto de neón */
 }
-section {
-  padding: 1.5em;
-  border-bottom: 1px solid #ddd;
+
+/* Botones */
+button {
+    background-color: var(--rosa-principal);
+    color: var(--gris-claro);
+    border: 2px solid var(--neon-verde);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
 }
-footer {
-  text-align: center;
-  background-color: #ffe4e1;
-  padding: 1em;
-  font-size: 0.9em;
+
+button:hover {
+    background-color: var(--neon-verde);
+    transform: scale(1.05);
+}
+
+/* Enlaces */
+a {
+    color: var(--rosa-principal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--neon-verde);
 }
