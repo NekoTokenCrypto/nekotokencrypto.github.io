@@ -1,3 +1,10 @@
+/* Logo */
+header img {
+    width: 80px; /* Cambia el tamaño a 80px o el tamaño que desees */
+    display: block;
+    margin: 0 auto 10px; /* Centra el logo y añade un margen en la parte inferior */
+}
+
 /* Paleta de colores */
 :root {
     --azul-claro: #3a7bd5; /* Azul claro */
@@ -22,9 +29,12 @@ h1 {
     -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
     color: transparent; /* Hace que el texto sea transparente para que se vea el gradiente */
     text-align: center; /* Centra el título */
-    text-shadow: 0 0 10px var(--azul-claro), 0 0 20px var(--azul-medio); /* Efecto de neón alrededor del texto */
+    text-shadow: 
+        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
+        0 0 20px var(--azul-claro), 
+        0 0 30px var(--azul-medio), 
+        0 0 40px var(--azul-oscuro); /* Efecto de neón alrededor del texto */
 }
-
 /* Estilo para subtítulos */
 h2, h3 {
     color: var(--azul-claro);
