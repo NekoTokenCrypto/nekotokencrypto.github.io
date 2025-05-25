@@ -17,9 +17,18 @@ body {
 }
 
 /* Títulos */
-h1, h2, h3 {
+h1 {
+    font-size: 4rem; /* Título más grande */
+    background: linear-gradient(to right, #FF77FF, #222); /* Gradiente de rosa y azul */
+    -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
+    color: transparent; /* Hace que el texto sea transparente para que se vea el gradiente */
+    text-align: center; /* Centra el título */
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #FF77FF; /* Efecto de neón alrededor del texto */
+}
+
+h2, h3 {
     color: var(--rosa-principal);
-    text-shadow: 0 0 10px var(--neon-verde); /* Efecto de neón */
+    text-shadow: 0 0 10px var(--neon-verde); /* Efecto de neón para subtítulos */
 }
 
 /* Botones */
