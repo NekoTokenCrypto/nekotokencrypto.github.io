@@ -8,8 +8,7 @@
 
 /* Fondo estilo digital con patrones */
 body {
-    background-color: var(--azul-negro);
-    background-image: url('assets/digital-pattern.png'); /* Asegúrate de tener un patrón digital */
+    background: linear-gradient(135deg, #1e1e2f, #00FF00); /* Gradiente azul y verde */
     background-size: cover;
     background-position: center;
     color: var(--gris-claro); /* Textos claros para contraste */
