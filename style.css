@@ -58,6 +58,47 @@ header p {
     margin-top: 10px; /* Añadir un poco de espacio arriba */
 }
 
+/* Estilo para la sección "Acerca de NekoToken" */
+#acerca-de {
+    padding: 40px 20px;
+    background-color: var(--azul-oscuro);
+    color: var(--gris-claro);
+    text-align: center;
+}
+
+#acerca-de h2 {
+    font-size: 3rem;
+    color: var(--azul-claro);
+    margin-bottom: 20px;
+}
+
+#acerca-de .contenido-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#acerca-de .contenido-seccion .texto {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#acerca-de .contenido-seccion .imagen-principal {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+#acerca-de .contenido-seccion .imagen-principal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 /* Estilo para subtítulos (h2, h3) */
 h2, h3 {
     color: var(--azul-oscuro); /* Color negro azulado */
