@@ -1,49 +1,58 @@
+/* Paleta de colores */
+:root {
+    --rosa-principal: #FF77FF; /* Rosa brillante */
+    --azul-negro: #222; /* Azul oscuro */
+    --gris-claro: #F5F5F5; /* Gris claro */
+    --neon-verde: #00FF00; /* Verde neón */
+}
+
+/* Fondo estilo digital con gradiente azul y verde */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff0f5;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #00FF00); /* Gradiente azul y verde */
+    background-size: cover;
+    background-position: center;
+    color: var(--gris-claro); /* Textos claros para contraste */
+    font-family: Arial, sans-serif; /* O una fuente digital si la prefieres */
 }
-header {
-  background-color: #ffb6c1;
-  color: white;
-  text-align: center;
-  padding: 1em;
+
+/* Títulos */
+h1 {
+    font-size: 4rem; /* Título más grande */
+    background: linear-gradient(to right, #FF77FF, #222); /* Gradiente de rosa y azul */
+    -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
+    color: transparent; /* Hace que el texto sea transparente para que se vea el gradiente */
+    text-align: center; /* Centra el título */
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #FF77FF; /* Efecto de neón alrededor del texto */
 }
-.logo {
-  width: 120px;
-  display: block;
-  margin: 0 auto 10px;
+
+h2, h3 {
+    color: var(--rosa-principal);
+    text-shadow: 0 0 10px var(--neon-verde); /* Efecto de neón para subtítulos */
 }
-section {
-  padding: 1.5em;
-  border-bottom: 1px solid #ddd;
+
+/* Botones */
+button {
+    background-color: var(--rosa-principal);
+    color: var(--gris-claro);
+    border: 2px solid var(--neon-verde);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
 }
-footer {
-  text-align: center;
-  background-color: #ffe4e1;
-  padding: 1em;
-  font-size: 0.9em;
+
+button:hover {
+    background-color: var(--neon-verde);
+    transform: scale(1.05);
 }
-.contenido-seccion {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+
+/* Enlaces */
+a {
+    color: var(--rosa-principal);
+    text-decoration: none;
 }
-.contenido-seccion .texto {
-  flex: 1 1 50%;
-  padding: 10px;
-}
-.contenido-seccion .imagen-principal {
-  flex: 1 1 50%;
-  text-align: center;
-  padding: 10px;
-}
-.contenido-seccion .imagen-principal img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+a:hover {
+    color: var(--neon-verde);
 }
