@@ -24,6 +24,14 @@ body {
     font-family: Arial, sans-serif; /* O una fuente digital si la prefieres */
 }
 
+/* Hacer las imágenes responsivas */
+img {
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Asegura que las imágenes se comporten como bloques */
+    margin: 0 auto; /* Centra las imágenes */
+}
+
 /* Estilos para el título */
 h1 {
     font-size: 4rem; /* Título más grande */
