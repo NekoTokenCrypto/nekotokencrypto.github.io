@@ -30,7 +30,6 @@ h2, h3 {
     color: var(--rosa-principal);
     text-shadow: 0 0 10px var(--neon-verde); /* Efecto de neón para subtítulos */
 }
-
 /* Botones */
 button {
     background-color: var(--rosa-principal);
