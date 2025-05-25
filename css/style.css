@@ -126,6 +126,20 @@ header p {
     }
 }
 
+/* Estilo para la imagen de Neko-chan en la sección "Acerca de NekoToken" */
+#acerca-de .contenido-seccion .imagen-principal img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el mouse */
+}
+
+/* Efecto de hover para la imagen */
+#acerca-de .contenido-seccion .imagen-principal img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
 /* Estilo para subtítulos (h2, h3) */
 h2, h3 {
     color: var(--azul-oscuro); /* Color negro azulado */
