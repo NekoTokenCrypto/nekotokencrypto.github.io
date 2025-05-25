@@ -1,6 +1,6 @@
 /* Logo */
 header img {
-    width: 145px; /* Ajusta el tamaño a 145px o el tamaño que desees */
+    width: 200px; /* Ajusta el tamaño del logo a 200px */
     height: auto; /* Mantiene la proporción de la imagen */
     max-width: 100%; /* Asegura que el logo no se salga del contenedor */
     display: block;
@@ -28,11 +28,11 @@ body {
 h1 {
     font-size: 4rem; /* Título más grande */
     background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro)); /* Gradiente de azul claro y oscuro */
-    -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
-    color: transparent; /* Hace que el texto sea transparente para que se vea el gradiente */
+    color: var(--azul-oscuro); /* Color negro azulado para el texto */
     text-align: center; /* Centra el título */
+    padding: 20px; /* Espacio adicional para que el gradiente y la sombra se vean bien */
     text-shadow: 
-        0 0 8px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
+        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
         0 0 20px var(--azul-claro), 
         0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
 }
@@ -41,19 +41,21 @@ h1 {
 header p {
     font-size: 2.5rem; /* Aumenta el tamaño del texto */
     font-weight: bold; /* Hacer el texto más grueso */
-    color: var(--azul-claro); /* Color azul claro */
+    color: var(--azul-oscuro); /* Color negro azulado */
     text-align: center; /* Centra el subtítulo */
     text-shadow: 
-        0 0 8px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
+        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
         0 0 20px var(--azul-claro), 
         0 0 30px var(--azul-medio); /* Efecto de neón alrededor del texto */
     margin-top: 10px; /* Añadir un poco de espacio arriba */
 }
 
-/* Estilo para subtítulos */
+/* Estilo para subtítulos (h2, h3) */
 h2, h3 {
-    color: var(--azul-claro);
-    text-shadow: 0 0 8px #fff, 0 0 10px var(--azul-claro); /* Efecto de neón sutil para subtítulos */
+    color: var(--azul-oscuro); /* Color negro azulado */
+    text-shadow: 
+        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
+        0 0 20px var(--azul-claro); /* Efecto de neón sutil */
 }
 
 /* Botones */
