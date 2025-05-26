@@ -240,24 +240,4 @@ a:hover {
     color: var(--azul-oscuro);
 }
 
-/* Estilos para la sección de Tokenomics */
-#tokenomics {
-    background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
 
-#tokenomics h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#tokenomics .token-info {
-    font-size: 1.1em;
-    color: #555;
-}
-
-#tokenomics .token-info p {
-    margin: 10px 0;
-}
