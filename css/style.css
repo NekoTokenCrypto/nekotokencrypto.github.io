@@ -47,7 +47,7 @@ h1 {
 
 /* Estilos para la sección de la mascota */
 #mascota {
-    background-color: var(--gris-claro); /* Aseguramos que el fondo sea el gris claro */
+    background-color: var(--gris-claro); /* Fondo gris claro */
     padding: 40px 0;
     text-align: left;
     margin: 0 auto;
@@ -69,9 +69,9 @@ h1 {
 #mascota .contenido-seccion {
     display: flex;
     justify-content: flex-start; /* Asegura que los elementos se alineen de izquierda a derecha */
-    align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
-    gap: 20px;
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
 /* Estilo para la imagen (a la izquierda del texto) */
@@ -85,7 +85,7 @@ h1 {
     max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
 }
 
 /* Estilo para el texto (a la derecha de la imagen) */
@@ -105,17 +105,18 @@ h1 {
         text-align: center; /* Centra el texto en pantallas pequeñas */
     }
 
-    #mascota .contenido-seccion .texto {
-        max-width: 90%; /* Limita el tamaño del texto en pantallas pequeñas */
-        padding: 20px; /* Añade más espacio en el texto */
+    /* Ajuste de la imagen para pantallas pequeñas */
+    .contenido-seccion .imagen-principal img {
+        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
     }
 
-    #mascota .contenido-seccion .imagen-principal img {
-        max-width: 80%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    /* Reducir el tamaño del texto */
+    .contenido-seccion .texto {
+        padding: 20px;
     }
 
     #mascota h2 {
-        font-size: 2rem; /* Reduce el tamaño del título */
+        font-size: 2rem; /* Reducir el tamaño del título en pantallas pequeñas */
     }
 }
 
