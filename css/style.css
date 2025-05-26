@@ -68,7 +68,7 @@ h1 {
 /* Estilo del contenedor de la imagen y el texto */
 #mascota .contenido-seccion {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Asegura que los elementos se alineen de izquierda a derecha */
     align-items: center;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
     gap: 20px;
