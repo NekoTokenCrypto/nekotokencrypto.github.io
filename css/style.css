@@ -45,9 +45,33 @@ h1 {
         0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
 }
 
-/* Estilo específico para la imagen de la sección ¿Qué es NekoToken? */
+/* Estilo para la sección "¿Qué es NekoToken?" */
+#acerca-de .contenido-seccion {
+    display: flex;
+    justify-content: space-between; /* Coloca el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para el texto */
+#acerca-de .contenido-seccion .texto {
+    flex: 1; /* Hace que el texto ocupe el 50% del contenedor */
+    max-width: 50%; /* Limita el ancho del texto */
+    padding: 10px;
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+/* Estilo para la imagen */
+#acerca-de .contenido-seccion .imagen-principal {
+    flex: 1; /* Hace que la imagen ocupe el 50% del contenedor */
+    max-width: 50%; /* Limita el ancho de la imagen */
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+}
+
+/* Estilo específico para la imagen dentro de la sección "¿Qué es NekoToken?" */
 #acerca-de .contenido-seccion .imagen-principal img {
-    max-width: 100%; /* Asegura que la imagen no se desborde fuera del contenedor */
+    max-width: 100%; /* Asegura que la imagen no se desborde */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Bordes suaves */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
@@ -57,6 +81,34 @@ h1 {
 /* Efecto de hover para la imagen */
 #acerca-de .contenido-seccion .imagen-principal img:hover {
     transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #acerca-de .contenido-seccion {
+        flex-direction: column; /* Hace que los elementos se apilen verticalmente en pantallas pequeñas */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    /* Ajuste de la imagen para pantallas pequeñas */
+    .contenido-seccion .imagen-principal img {
+        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    /* Reducir el tamaño del texto */
+    .contenido-seccion .texto {
+        padding: 20px;
+    }
+
+    #acerca-de h2 {
+        font-size: 2.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    header p {
+        font-size: 1.5rem; /* Reducir el tamaño del subtítulo en pantallas pequeñas */
+    }
+}
+
 
 /* Estilo para el subtítulo en el header */
 header p {
