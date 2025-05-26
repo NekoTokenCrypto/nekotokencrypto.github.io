@@ -45,6 +45,80 @@ h1 {
         0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
 }
 
+/* Estilos para la sección de la mascota */
+#mascota {
+    background-color: var(--gris-claro);
+    padding: 40px 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1000px;
+    border-left: 5px solid var(--azul-medio);
+    border-right: 5px solid var(--azul-medio);
+    margin-top: 50px; /* Espacio adicional para separarlo de la sección anterior */
+}
+
+/* Título de la sección */
+#mascota h2 {
+    font-size: 2.5em;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px var(--azul-claro);
+}
+
+/* Estilo del contenedor de la imagen y el texto */
+#mascota .contenido-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 20px;
+}
+
+/* Estilo para el texto (a la derecha de la imagen) */
+#mascota .contenido-seccion .texto {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+    font-size: 1.2em;
+    color: var(--azul-oscuro); /* Color de texto más oscuro */
+    line-height: 1.6;
+}
+
+/* Estilo para la imagen (a la izquierda del texto) */
+#mascota .contenido-seccion .imagen-principal {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+#mascota .contenido-seccion .imagen-principal img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #mascota .contenido-seccion {
+        flex-direction: column; /* Apilar los elementos verticalmente en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    #mascota .contenido-seccion .texto {
+        max-width: 90%; /* Limita el tamaño del texto en pantallas pequeñas */
+        padding: 20px; /* Añade más espacio en el texto */
+    }
+
+    #mascota .contenido-seccion .imagen-principal img {
+        max-width: 80%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    #mascota h2 {
+        font-size: 2rem; /* Reduce el tamaño del título */
+    }
+}
+
 /* Estilo para la sección "¿Qué es NekoToken?" */
 #acerca-de .contenido-seccion {
     display: flex;
