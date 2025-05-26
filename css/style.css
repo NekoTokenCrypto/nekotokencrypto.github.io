@@ -45,6 +45,19 @@ h1 {
         0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
 }
 
+/* Estilo específico para la imagen de la sección ¿Qué es NekoToken? */
+#acerca-de .contenido-seccion .imagen-principal img {
+    max-width: 100%; /* Asegura que la imagen no se desborde fuera del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el mouse */
+}
+
+/* Efecto de hover para la imagen */
+#acerca-de .contenido-seccion .imagen-principal img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+
 /* Estilo para el subtítulo en el header */
 header p {
     font-size: 2.5rem; /* Aumenta el tamaño del texto */
