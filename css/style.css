@@ -54,6 +54,7 @@ h1 {
     border-left: 5px solid var(--azul-medio);
     border-right: 5px solid var(--azul-medio);
     margin-top: 50px; /* Espacio adicional para separarlo de la sección anterior */
+    color: var(--gris-claro); /* Aseguramos que el color del texto sea claro */
 }
 
 /* Título de la sección */
