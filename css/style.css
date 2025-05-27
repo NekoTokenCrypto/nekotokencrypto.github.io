@@ -317,7 +317,7 @@ a:hover {
 
 /* Estilos para la sección de redes sociales */
 #redes-sociales {
-    background-color: var(--gris-claro); /* Aseguramos que el fondo sea gris claro, igual que otras secciones */
+    background-color: var(--azul-oscuro); /* Aseguramos que el fondo sea gris claro, igual que otras secciones */
     padding: 40px 20px;
     margin-top: 20px;
 }
