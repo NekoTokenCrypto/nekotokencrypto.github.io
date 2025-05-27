@@ -291,7 +291,7 @@ h2, h3 {
 /* Botones */
 button {
     background-color: var(--azul-claro);
-    color: var(--gris-claro);
+    color: var(--azul-oscuro);
     border: 2px solid var(--azul-oscuro);
     padding: 10px 20px;
     border-radius: 5px;
