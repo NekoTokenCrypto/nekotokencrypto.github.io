@@ -317,20 +317,30 @@ a:hover {
 
 /* Estilo para el botón de compra en PancakeSwap */
 .btn-comprar {
-    background-color: var(--azul-claro);
-    color: var(--gris-claro);
-    padding: 15px 30px;
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
+    color: white;
+    padding: 12px 25px;
     font-size: 1.2em;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px; /* Bordes redondeados */
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: all 0.3s ease; /* Transición suave para hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    text-transform: uppercase; /* Poner todo el texto en mayúsculas */
     margin-top: 20px; /* Espacio por encima del botón */
 }
 
+.btn-comprar i {
+    font-size: 1.3em; /* Tamaño del icono */
+}
+
+/* Efecto de hover para el botón */
 .btn-comprar:hover {
-    background-color: var(--azul-oscuro);
     transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave al pasar el ratón */
 }
 
 /* Estilos para la sección de redes sociales */
