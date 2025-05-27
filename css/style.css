@@ -329,53 +329,59 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* Alineación y disposición de los botones */
 .social-buttons {
     display: flex;
     justify-content: center;
     gap: 15px; /* Espacio entre los botones */
-    flex-wrap: wrap; /* Permite que los botones se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .social-btn {
-    background-color: var(--azul-claro);
-    color: var(--gris-claro);
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
+    color: white;
     padding: 12px 25px;
     font-size: 1.2em;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px; /* Bordes redondeados */
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: all 0.3s ease; /* Transición suave para hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    text-transform: uppercase; /* Poner todo el texto en mayúsculas */
 }
 
+.social-btn i {
+    font-size: 1.3em; /* Tamaño de los iconos */
+}
+
+/* Efecto de hover para los botones */
 .social-btn:hover {
-    background-color: var(--azul-oscuro);
-    transform: scale(1.05);
+    transform: scale(1.1); /* Hacer que el botón crezca ligeramente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
 }
 
 /* Colores personalizados para cada red social */
 .social-btn.twitter {
     background-color: #1DA1F2;
-    color: white;
 }
 
 .social-btn.telegram {
     background-color: #0088cc;
-    color: white;
 }
 
 .social-btn.facebook {
     background-color: #3b5998;
-    color: white;
 }
 
 .social-btn.instagram {
     background-color: #E4405F;
-    color: white;
 }
 
 .social-btn.discord {
     background-color: #7289DA;
-    color: white;
 }
 
 /* Media query para pantallas más pequeñas */
