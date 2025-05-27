@@ -47,14 +47,13 @@ h1 {
 
 /* Estilos para la sección de la mascota */
 #mascota {
-    background-color: var(--gris-claro); /* Fondo gris claro */
+    background-color: var(--gris-claro); /* Aseguramos que el fondo sea gris claro */
     padding: 40px 0;
     margin: 0 auto;
     max-width: 1000px;
     border-left: 5px solid var(--azul-medio);
     border-right: 5px solid var(--azul-medio);
     margin-top: 50px; /* Espacio adicional para separarlo de la sección anterior */
-    color: var(--gris-claro); /* Aseguramos que el color del texto sea claro */
 }
 
 /* Título de la sección */
