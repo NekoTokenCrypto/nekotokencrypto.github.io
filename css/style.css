@@ -47,7 +47,7 @@ h1 {
 
 /* Estilos para la sección de la mascota */
 #mascota {
-    background-color: var(--gris-claro); /* Aseguramos que el fondo sea gris claro */
+    background-color: var(--Azul medio); /* Aseguramos que el fondo sea gris claro */
     padding: 40px 0;
     margin: 0 auto;
     max-width: 1000px;
@@ -79,6 +79,7 @@ h1 {
     flex: 1;
     max-width: 50%;
     text-align: center; /* Centra la imagen dentro de su contenedor */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el mouse */
 }
 
 #mascota .contenido-seccion .imagen-principal img {
@@ -96,7 +97,7 @@ h1 {
     font-size: 1.2em;
     color: var(--azul-oscuro); /* Color de texto más oscuro */
     line-height: 1.6;
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la derecha */
 }
 
 /* Media query para pantallas más pequeñas */
