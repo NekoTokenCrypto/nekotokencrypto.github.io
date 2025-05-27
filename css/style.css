@@ -120,7 +120,6 @@ h1 {
         font-size: 2rem; /* Reducir el tamaño del título en pantallas pequeñas */
     }
 }
-
 /* Estilo para la sección "¿Qué es NekoToken?" */
 #acerca-de .contenido-seccion {
     display: flex;
