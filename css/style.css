@@ -315,6 +315,24 @@ a:hover {
     color: var(--azul-oscuro);
 }
 
+/* Estilo para el botón de compra en PancakeSwap */
+.btn-comprar {
+    background-color: var(--azul-claro);
+    color: var(--gris-claro);
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px; /* Espacio por encima del botón */
+}
+
+.btn-comprar:hover {
+    background-color: var(--azul-oscuro);
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+
 /* Estilos para la sección de redes sociales */
 #redes-sociales {
     text-align: center;
