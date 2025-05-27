@@ -47,7 +47,7 @@ h1 {
 
 /* Estilos para la sección de la mascota */
 #mascota {
-    background-color: var(--Azul medio); /* Aseguramos que el fondo sea gris claro */
+    background-color: var(--azul-medio); /* Aseguramos que el fondo sea azul medio */
     padding: 40px 0;
     margin: 0 auto;
     max-width: 1000px;
@@ -56,17 +56,13 @@ h1 {
     margin-top: 50px; /* Espacio adicional para separarlo de la sección anterior */
 }
 
-/* Estilos para el título */
-h1 {
-    font-size: 4rem; /* Título más grande */
-    background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro)); /* Gradiente de azul claro y oscuro */
-    color: var(--azul-oscuro); /* Color negro azulado para el texto */
-    text-align: center; /* Centra el título */
-    padding: 20px; /* Espacio adicional para que el gradiente y la sombra se vean bien */
-    text-shadow: 
-        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
-        0 0 20px var(--azul-claro), 
-        0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
+/* Título de la sección */
+#mascota h2 {
+    font-size: 2.5em;
+    color: var(--gris-claro); /* Aseguramos que el título esté en un color claro para contraste */
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px var(--azul-claro);
+    text-align: left; /* Asegura que el título esté alineado a la izquierda */
 }
 
 /* Estilo del contenedor de la imagen y el texto */
@@ -83,7 +79,6 @@ h1 {
     flex: 1;
     max-width: 50%;
     text-align: center; /* Centra la imagen dentro de su contenedor */
-    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el mouse */
 }
 
 #mascota .contenido-seccion .imagen-principal img {
@@ -99,9 +94,9 @@ h1 {
     max-width: 50%;
     padding: 10px;
     font-size: 1.2em;
-    color: var(--azul-oscuro); /* Color de texto más oscuro */
+    color: var(--gris-claro); /* Aseguramos que el texto tenga buen contraste */
     line-height: 1.6;
-    text-align: left; /* Asegura que el texto esté alineado a la derecha */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
 }
 
 /* Media query para pantallas más pequeñas */
