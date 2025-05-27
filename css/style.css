@@ -94,7 +94,7 @@ h1 {
     max-width: 50%;
     padding: 10px;
     font-size: 1.2em;
-    color: var(--gris-claro); /* Aseguramos que el texto tenga buen contraste */
+    color: #fff; /* Cambié el color a blanco */
     line-height: 1.6;
     text-align: left; /* Asegura que el texto esté alineado a la izquierda */
 }
