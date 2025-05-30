@@ -45,6 +45,11 @@ h1 {
         0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
 }
 
+.negrita {
+  font-weight: bold;
+  color: white; /* Esto asegura que el texto sea blanco */
+}
+
 /* Estilos para la sección de la mascota */
 #mascota {
     background-color: var(--azul-medio); /* Aseguramos que el fondo sea azul medio */
