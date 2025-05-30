@@ -50,6 +50,24 @@ h1 {
   color: white; /* Esto asegura que el texto sea blanco */
 }
 
+.imagen-principal img {
+  width: 100%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
+  max-width: 600px; /* Limita el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+@media screen and (min-width: 768px) {
+  .imagen-principal img {
+    max-width: 80%; /* Reduce el tamaño máximo de la imagen en pantallas grandes */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imagen-principal img {
+    max-width: 50%; /* En pantallas aún más grandes, la imagen se reduce aún más */
+  }
+}
+
 /* Estilos para la sección de la mascota */
 #mascota {
     background-color: var(--azul-medio); /* Aseguramos que el fondo sea azul medio */
