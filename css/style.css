@@ -69,34 +69,24 @@ h1 {
 }
 
 .banner-con-fondo {
-  background-image: url('../images/banner-neko.jpg'); /* Asegúrate de que la imagen exista */
+  background-image: url('images/banner-neko.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   padding: 60px 20px;
   text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.banner-con-fondo::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo ligeramente */
-  z-index: -1;
 }
 
 .contenido-banner {
-  position: relative;
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 12px;
+  display: inline-block;
 }
 
-.contenido-banner h1,
-.contenido-banner p {
-  color: white;
-  text-shadow: 0 0 10px var(--azul-claro), 0 0 20px #000;
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 /* Estilos para la sección de la mascota */
