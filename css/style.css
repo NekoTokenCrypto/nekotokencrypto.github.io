@@ -68,27 +68,6 @@ h1 {
   }
 }
 
-.banner-con-fondo {
-  background-image: url('images/banner-neko.png');
-  background-size: cover;
-  background-position: center;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.contenido-banner {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  border-radius: 12px;
-  display: inline-block;
-}
-
-.logo {
-  width: 200px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
 /* Estilos para la sección de la mascota */
 #mascota {
     background-color: var(--azul-medio); /* Aseguramos que el fondo sea azul medio */
@@ -473,4 +452,4 @@ a:hover {
         font-size: 1em; /* Reducir el tamaño de la fuente */
         padding: 10px 0; /* Ajustar el padding para mejor ajuste */
     }
-}
+} 
