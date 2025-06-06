@@ -350,6 +350,11 @@ a:hover {
     margin: 0 auto;
 }
 
+/* Separación entre la sección de equipo y la sección Tokenomics */
+.seccion-equipo {
+    margin-bottom: 60px; /* Puedes ajustar a 80px si quieres más espacio */
+}
+
 /* Estilo para el botón de compra en PancakeSwap */
 .btn-comprar {
     background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
