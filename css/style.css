@@ -319,9 +319,10 @@ a:hover {
 .seccion-equipo h3 {
     font-size: 2rem;
     margin-bottom: 50px;
-    color: var(--azul-claro);
-    text-shadow: 0 0 10px #fff, 0 0 20px var(--azul-medio);
+    color: #000000; /* Negro puro */
+    text-shadow: none; /* Opcional: quitar sombra para que el negro se vea limpio */
 }
+
 
 /* Separación entre la sección de equipo y la sección Tokenomics */
 .seccion-equipo {
