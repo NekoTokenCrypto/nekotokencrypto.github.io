@@ -68,81 +68,6 @@ h1 {
   }
 }
 
-/* Estilos para la sección de la mascota */
-#mascota {
-    background-color: var(--azul-medio); /* Aseguramos que el fondo sea azul medio */
-    padding: 40px 0;
-    margin: 0 auto;
-    max-width: 1000px;
-    border-left: 5px solid var(--azul-medio);
-    border-right: 5px solid var(--azul-medio);
-    margin-top: 50px; /* Espacio adicional para separarlo de la sección anterior */
-}
-
-/* Título de la sección */
-#mascota h2 {
-    font-size: 2.5em;
-    color: var(--gris-claro); /* Aseguramos que el título esté en un color claro para contraste */
-    margin-bottom: 20px;
-    text-shadow: 0 0 5px var(--azul-claro);
-    text-align: left; /* Asegura que el título esté alineado a la izquierda */
-}
-
-/* Estilo del contenedor de la imagen y el texto */
-#mascota .contenido-seccion {
-    display: flex;
-    justify-content: flex-start; /* Asegura que los elementos se alineen de izquierda a derecha */
-    align-items: center; /* Centra el contenido verticalmente */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    gap: 20px; /* Espacio entre los elementos */
-}
-
-/* Estilo para la imagen (a la izquierda del texto) */
-#mascota .contenido-seccion .imagen-principal {
-    flex: 1;
-    max-width: 50%;
-    text-align: center; /* Centra la imagen dentro de su contenedor */
-}
-
-#mascota .contenido-seccion .imagen-principal img {
-    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
-}
-
-/* Estilo para el texto (a la derecha de la imagen) */
-#mascota .contenido-seccion .texto {
-    flex: 1;
-    max-width: 50%;
-    padding: 10px;
-    font-size: 1.2em;
-    color: #fff; /* Cambié el color a blanco */
-    line-height: 1.6;
-    text-align: left; /* Asegura que el texto esté alineado a la derecha */
-}
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    #mascota .contenido-seccion {
-        flex-direction: column; /* Apilar los elementos verticalmente en pantallas pequeñas */
-        text-align: center; /* Centra el texto en pantallas pequeñas */
-    }
-
-    /* Ajuste de la imagen para pantallas pequeñas */
-    .contenido-seccion .imagen-principal img {
-        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
-    }
-
-    /* Reducir el tamaño del texto */
-    .contenido-seccion .texto {
-        padding: 20px;
-    }
-
-    #mascota h2 {
-        font-size: 2rem; /* Reducir el tamaño del título en pantallas pequeñas */
-    }
-}
 /* Estilo para la sección "¿Qué es NekoToken?" */
 #acerca-de .contenido-seccion {
     display: flex;
@@ -336,6 +261,58 @@ a {
 
 a:hover {
     color: var(--azul-oscuro);
+}
+
+/* Estilo para la sección "¿Quién es Neko-chan?" */
+#quien-es-neko {
+    padding: 40px 20px;
+    background-color: var(--azul-claro); /* Fondo azul claro para contraste */
+    color: var(--gris-claro);
+    text-align: center;
+}
+
+#quien-es-neko h2 {
+    font-size: 3rem;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #fff, 0 0 20px var(--azul-medio);
+}
+
+#quien-es-neko .contenido-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#quien-es-neko .imagen-principal {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+#quien-es-neko .imagen-principal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-medio);
+    transition: transform 0.3s ease-in-out;
+}
+
+#quien-es-neko .imagen-principal img:hover {
+    transform: scale(1.05);
+}
+
+#quien-es-neko .texto {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left; /* Alineado a la izquierda */
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Estilo para el botón de compra en PancakeSwap */
