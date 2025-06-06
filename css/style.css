@@ -315,6 +315,36 @@ a:hover {
     line-height: 1.6;
 }
 
+/* Estilo para el subtítulo de Neko-chan líder en la sección de equipo */
+.seccion-equipo h3 {
+    font-size: 2rem;
+    margin-bottom: 50px; /* Separación visual debajo del subtítulo */
+    color: var(--azul-claro);
+    text-shadow: 0 0 10px #fff, 0 0 20px var(--azul-medio);
+}
+
+/* Estilo para la sección "Tokenomics" */
+#tokenomics {
+    padding: 40px 20px;
+    background-color: var(--azul-oscuro);
+    color: var(--gris-claro);
+    text-align: center;
+}
+
+#tokenomics h2 {
+    font-size: 3rem;
+    color: var(--azul-claro);
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #fff, 0 0 20px var(--azul-claro);
+}
+
+#tokenomics p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* Estilo para el botón de compra en PancakeSwap */
 .btn-comprar {
     background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
