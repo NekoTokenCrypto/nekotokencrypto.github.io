@@ -318,9 +318,14 @@ a:hover {
 /* Estilo para el subtítulo de Neko-chan líder en la sección de equipo */
 .seccion-equipo h3 {
     font-size: 2rem;
-    margin-bottom: 50px; /* Separación visual debajo del subtítulo */
+    margin-bottom: 50px;
     color: var(--azul-claro);
     text-shadow: 0 0 10px #fff, 0 0 20px var(--azul-medio);
+}
+
+/* Separación entre la sección de equipo y la sección Tokenomics */
+.seccion-equipo {
+    margin-bottom: 60px;
 }
 
 /* Estilo para la sección "Tokenomics" */
