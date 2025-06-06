@@ -320,9 +320,8 @@ a:hover {
     font-size: 2rem;
     margin-bottom: 50px;
     color: #000000; /* Negro puro */
-    text-shadow: none; /* Opcional: quitar sombra para que el negro se vea limpio */
+    text-shadow: 0 0 10px #ffffff; /* Sombra blanca suave */
 }
-
 
 /* Separación entre la sección de equipo y la sección Tokenomics */
 .seccion-equipo {
