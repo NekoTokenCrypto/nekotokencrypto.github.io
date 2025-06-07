@@ -337,7 +337,7 @@ a:hover {
 }
 
 /* Estilo para el botón del Metaverso */
-.btn-metaverso {
+.btn-comprar {
     background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro));
     color: white;
     padding: 12px 25px;
@@ -352,13 +352,14 @@ a:hover {
     gap: 10px;
     text-transform: uppercase;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-decoration: none;
 }
 
-.btn-metaverso:hover {
+.btn-comprar:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-claro));
-    box-shadow: 0 0 15px var(--azul-claro);
 }
 
 /* Estilo para el botón de compra en PancakeSwap */
