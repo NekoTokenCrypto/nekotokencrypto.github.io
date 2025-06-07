@@ -3,84 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌐 Metaverso de Neko</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    /* Fondo y estilos básicos */
-    body {
-      background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro));
-      color: var(--gris-claro);
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .metaverso-container {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px #fff, 0 0 20px var(--azul-claro);
-      color: var(--azul-claro);
-    }
-
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .galeria-item {
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .galeria-item:hover {
-      transform: scale(1.05);
-    }
-
-    .galeria-item img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .frase {
-      margin-top: 10px;
-      font-style: italic;
-      font-size: 1rem;
-      color: #f0f0f0;
-    }
-  </style>
+  <title>Metaverso de Neko</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="metaverso-container">
-    <h1>🌐 Bienvenido al Metaverso de Neko</h1>
-    <p>Explora las representaciones visuales de Neko-chan en su forma más poderosa, kawaii y digital.</p>
 
-    <div class="galeria">
-      <div class="galeria-item">
-        <img src="imagenes/neko1.png" alt="Neko flotando con energía azul">
-        <div class="frase">"Poder digital, alma kawaii."</div>
-      </div>
-      <div class="galeria-item">
-        <img src="imagenes/neko2.png" alt="Neko con fondo galáctico">
-        <div class="frase">"Aquí, los sueños se construyen en código."</div>
-      </div>
-      <div class="galeria-item">
-        <img src="imagenes/neko3.png" alt="Neko hacker modo waifu">
-        <div class="frase">"No solo soy un meme... soy revolución."</div>
-      </div>
-      <!-- Puedes seguir agregando más bloques similares -->
+  <header>
+    <h1>🌐 Metaverso de Neko</h1>
+    <p>Explora la galería visual de Neko-chan en todo su esplendor digital.</p>
+  </header>
+
+  <section class="galeria">
+    <!-- Ejemplo de imagen 1 -->
+    <div class="galeria-item">
+      <img src="../images/neko1.png" alt="Neko-chan estilo guerrera">
+      <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
     </div>
-  </div>
+
+    <!-- Ejemplo de imagen 2 -->
+    <div class="galeria-item">
+      <img src="../images/neko2.png" alt="Neko-chan futurista">
+      <p>Conectando mundos digitales con estilo y poder kawaii.</p>
+    </div>
+
+    <!-- Puedes seguir agregando más bloques similares -->
+  </section>
+
 </body>
 </html>
