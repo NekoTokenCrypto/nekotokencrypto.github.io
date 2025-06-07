@@ -325,23 +325,33 @@ a:hover {
 }
 
 /* Botón para acceder al Metaverso de Neko */
-.btn-metaverso {
-    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro));
-    color: white;
-    padding: 14px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3), 0 0 25px var(--azul-claro);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
+.metaverso-boton-derecha {
+    text-align: right;
+    padding: 20px 40px 0 0; /* Espacio a la derecha */
 }
 
-.btn-metaverso:hover {
+/* Botón grande como subtítulo, con sombra y efecto neón */
+.btn-metaverso-grande {
+    font-size: 2.5rem; /* Tamaño similar al título del equipo */
+    font-weight: bold;
+    background: none; /* Sin fondo para parecer más como un título */
+    color: var(--azul-claro);
+    text-shadow: 
+        0 0 10px #fff,
+        0 0 20px var(--azul-claro),
+        0 0 30px var(--azul-medio);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-metaverso-grande:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px var(--azul-oscuro);
+    text-shadow: 
+        0 0 12px #fff,
+        0 0 25px var(--azul-claro),
+        0 0 40px var(--azul-oscuro);
 }
     
 /* Estilo para la sección "Tokenomics" */
