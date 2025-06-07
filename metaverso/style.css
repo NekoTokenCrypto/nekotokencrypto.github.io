@@ -1,0 +1,455 @@
+/* Logo */
+header img {
+    width: 280px; /* Ajusta el tamaño del logo a 280px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que el logo no se salga del contenedor */
+    display: block;
+    margin: 0 auto 10px; /* Centra el logo y añade un margen en la parte inferior */
+}
+
+/* Paleta de colores */
+:root {
+    --azul-claro: #3a7bd5; /* Azul claro */
+    --azul-medio: #1e4b89; /* Azul medio */
+    --azul-oscuro: #162d3f; /* Azul oscuro */
+    --gris-claro: #F5F5F5; /* Gris claro */
+}
+
+/* Fondo estilo digital con gradiente azul y oscuro */
+body {
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente de azul claro a azul oscuro */
+    background-size: cover;
+    background-position: center;
+    color: var(--gris-claro); /* Textos claros para contraste */
+    font-family: Arial, sans-serif; /* O una fuente digital si la prefieres */
+}
+
+/* Hacer las imágenes responsivas */
+img {
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Asegura que las imágenes se comporten como bloques */
+    margin: 0 auto; /* Centra las imágenes */
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 4rem; /* Título más grande */
+    background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro)); /* Gradiente de azul claro y oscuro */
+    color: var(--azul-oscuro); /* Color negro azulado para el texto */
+    text-align: center; /* Centra el título */
+    padding: 20px; /* Espacio adicional para que el gradiente y la sombra se vean bien */
+    text-shadow: 
+        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
+        0 0 20px var(--azul-claro), 
+        0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
+}
+
+.negrita {
+  font-weight: bold;
+  color: white; /* Esto asegura que el texto sea blanco */
+}
+
+.imagen-principal img {
+  width: 100%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
+  max-width: 600px; /* Limita el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+@media screen and (min-width: 768px) {
+  .imagen-principal img {
+    max-width: 80%; /* Reduce el tamaño máximo de la imagen en pantallas grandes */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imagen-principal img {
+    max-width: 50%; /* En pantallas aún más grandes, la imagen se reduce aún más */
+  }
+}
+
+/* Estilos para la sección de la mascota */
+#mascota {
+    background-color: var(--azul-medio); /* Aseguramos que el fondo sea azul medio */
+    padding: 40px 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    border-left: 5px solid var(--azul-medio);
+    border-right: 5px solid var(--azul-medio);
+    margin-top: 50px; /* Espacio adicional para separarlo de la sección anterior */
+}
+
+/* Título de la sección */
+#mascota h2 {
+    font-size: 2.5em;
+    color: var(--gris-claro); /* Aseguramos que el título esté en un color claro para contraste */
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px var(--azul-claro);
+    text-align: left; /* Asegura que el título esté alineado a la izquierda */
+}
+
+/* Estilo del contenedor de la imagen y el texto */
+#mascota .contenido-seccion {
+    display: flex;
+    justify-content: flex-start; /* Asegura que los elementos se alineen de izquierda a derecha */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para la imagen (a la izquierda del texto) */
+#mascota .contenido-seccion .imagen-principal {
+    flex: 1;
+    max-width: 50%;
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+}
+
+#mascota .contenido-seccion .imagen-principal img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
+}
+
+/* Estilo para el texto (a la derecha de la imagen) */
+#mascota .contenido-seccion .texto {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff; /* Cambié el color a blanco */
+    line-height: 1.6;
+    text-align: left; /* Asegura que el texto esté alineado a la derecha */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #mascota .contenido-seccion {
+        flex-direction: column; /* Apilar los elementos verticalmente en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    /* Ajuste de la imagen para pantallas pequeñas */
+    .contenido-seccion .imagen-principal img {
+        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    /* Reducir el tamaño del texto */
+    .contenido-seccion .texto {
+        padding: 20px;
+    }
+
+    #mascota h2 {
+        font-size: 2rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+}
+/* Estilo para la sección "¿Qué es NekoToken?" */
+#acerca-de .contenido-seccion {
+    display: flex;
+    justify-content: space-between; /* Coloca el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para el texto */
+#acerca-de .contenido-seccion .texto {
+    flex: 1; /* Hace que el texto ocupe el 50% del contenedor */
+    max-width: 50%; /* Limita el ancho del texto */
+    padding: 10px;
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+/* Estilo para la imagen */
+#acerca-de .contenido-seccion .imagen-principal {
+    flex: 1; /* Hace que la imagen ocupe el 50% del contenedor */
+    max-width: 50%; /* Limita el ancho de la imagen */
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+}
+
+/* Estilo específico para la imagen dentro de la sección "¿Qué es NekoToken?" */
+#acerca-de .contenido-seccion .imagen-principal img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el mouse */
+}
+
+/* Efecto de hover para la imagen */
+#acerca-de .contenido-seccion .imagen-principal img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #acerca-de .contenido-seccion {
+        flex-direction: column; /* Hace que los elementos se apilen verticalmente en pantallas pequeñas */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    /* Ajuste de la imagen para pantallas pequeñas */
+    .contenido-seccion .imagen-principal img {
+        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    /* Reducir el tamaño del texto */
+    .contenido-seccion .texto {
+        padding: 20px;
+    }
+
+    #acerca-de h2 {
+        font-size: 2.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    header p {
+        font-size: 1.5rem; /* Reducir el tamaño del subtítulo en pantallas pequeñas */
+    }
+}
+
+
+/* Estilo para el subtítulo en el header */
+header p {
+    font-size: 2.5rem; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hacer el texto más grueso */
+    color: var(--azul-oscuro); /* Color negro azulado */
+    text-align: center; /* Centra el subtítulo */
+    text-shadow: 
+        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
+        0 0 20px var(--azul-claro), 
+        0 0 30px var(--azul-medio); /* Efecto de neón alrededor del texto */
+    margin-top: 10px; /* Añadir un poco de espacio arriba */
+}
+
+/* Estilo para la sección "Acerca de NekoToken" */
+#acerca-de {
+    padding: 40px 20px;
+    background-color: var(--azul-oscuro);
+    color: var(--gris-claro);
+    text-align: center;
+}
+
+#acerca-de h2 {
+    font-size: 3rem;
+    color: var(--azul-claro);
+    margin-bottom: 20px;
+}
+
+#acerca-de .contenido-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 20px;
+}
+
+#acerca-de .contenido-seccion .texto {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#acerca-de .contenido-seccion .imagen-principal {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+#acerca-de .contenido-seccion .imagen-principal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Asegurarse de que el texto y la imagen se apilen en pantallas más pequeñas */
+    .contenido-seccion {
+        flex-direction: column; /* Hace que los elementos se apilen verticalmente */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    /* Reducir el tamaño de las imágenes en pantallas más pequeñas */
+    .contenido-seccion .imagen-principal img {
+        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    /* Ajustar el tamaño del texto */
+    .contenido-seccion .texto {
+        padding: 20px;
+    }
+
+    #acerca-de h2 {
+        font-size: 2.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    header p {
+        font-size: 1.5rem; /* Reducir el tamaño del subtítulo en pantallas pequeñas */
+    }
+}
+
+/* Estilo para la imagen de Neko-chan en la sección "Acerca de NekoToken" */
+#acerca-de .contenido-seccion .imagen-principal img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px var(--azul-claro); /* Sombra suave y neón */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el mouse */
+}
+
+/* Efecto de hover para la imagen */
+#acerca-de .contenido-seccion .imagen-principal img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Estilo para subtítulos (h2, h3) */
+h2, h3 {
+    color: var(--azul-oscuro); /* Color negro azulado */
+    text-shadow: 
+        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
+        0 0 20px var(--azul-claro); /* Efecto de neón sutil */
+}
+
+/* Botones */
+button {
+    background-color: var(--azul-claro);
+    color: var(--azul-oscuro);
+    border: 2px solid var(--azul-oscuro);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--azul-oscuro);
+    transform: scale(1.05);
+}
+
+/* Enlaces */
+a {
+    color: var(--azul-claro);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--azul-oscuro);
+}
+
+/* Estilo para el botón de compra en PancakeSwap */
+.btn-comprar {
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    text-transform: uppercase; /* Poner todo el texto en mayúsculas */
+    margin-top: 20px; /* Espacio por encima del botón */
+}
+
+.btn-comprar i {
+    font-size: 1.3em; /* Tamaño del icono */
+}
+
+/* Efecto de hover para el botón con desvanecido y sombra */
+.btn-comprar:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Desvanecido suave al pasar el ratón */
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-claro)); /* Invertir el gradiente en hover */
+}
+
+/* Estilos para la sección de redes sociales */
+#redes-sociales {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--Azul medio);
+    margin-top: 20px;
+}
+
+#redes-sociales h2 {
+    font-size: 2.5em;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+}
+
+/* Alineación y disposición de los botones */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los botones */
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    text-transform: uppercase; /* Poner todo el texto en mayúsculas */
+}
+
+.social-btn i {
+    font-size: 1.3em; /* Tamaño de los iconos */
+}
+
+/* Efecto de hover para los botones */
+.social-btn:hover {
+    transform: scale(1.1); /* Hacer que el botón crezca ligeramente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+/* Colores personalizados para cada red social */
+.social-btn.twitter {
+    background-color: #1DA1F2;
+}
+
+.social-btn.telegram {
+    background-color: #0088cc;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+}
+
+.social-btn.instagram {
+    background-color: #E4405F;
+}
+
+.social-btn.discord {
+    background-color: #7289DA;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #redes-sociales h2 {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
+
+    .social-buttons {
+        flex-direction: column; /* Los botones se apilan verticalmente en pantallas pequeñas */
+        gap: 10px; /* Espacio reducido entre los botones */
+    }
+
+    .social-btn {
+        width: 80%; /* Los botones ocuparán el 80% del ancho del contenedor */
+        font-size: 1em; /* Reducir el tamaño de la fuente */
+        padding: 10px 0; /* Ajustar el padding para mejor ajuste */
+    }
+} 
