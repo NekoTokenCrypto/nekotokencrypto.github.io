@@ -362,33 +362,34 @@ a:hover {
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-claro));
 }
 
-/* Estilo para el botón de compra en PancakeSwap */
+/* Estilo para el botón de compra en QuickSwap u otros exchanges */
 .btn-comprar {
-    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Fondo con gradiente */
     color: white;
     padding: 12px 25px;
     font-size: 1.2em;
     border: none;
     border-radius: 10px; /* Bordes redondeados */
     cursor: pointer;
-    transition: all 0.3s ease; /* Transición suave para hover */
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espacio entre el icono y el texto */
-    text-transform: uppercase; /* Poner todo el texto en mayúsculas */
-    margin-top: 20px; /* Espacio por encima del botón */
+    gap: 10px; /* Espacio entre ícono y texto */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    margin-top: 20px;
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-decoration: none;
 }
 
 .btn-comprar i {
-    font-size: 1.3em; /* Tamaño del icono */
+    font-size: 1.3em; /* Tamaño del ícono */
 }
 
-/* Efecto de hover para el botón con desvanecido y sombra */
 .btn-comprar:hover {
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Desvanecido suave al pasar el ratón */
-    background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-claro)); /* Invertir el gradiente en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Sombra más fuerte */
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-claro)); /* Gradiente invertido */
 }
 
 /* Estilos para la sección de redes sociales */
