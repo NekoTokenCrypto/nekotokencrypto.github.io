@@ -35,36 +35,21 @@ img {
 /* Estilos para el título */
 h1 {
     font-size: 4rem; /* Título más grande */
-    background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro)); /* Gradiente de azul claro y oscuro */
-    color: var(--azul-oscuro); /* Color negro azulado para el texto */
-    text-align: center; /* Centra el título */
-    padding: 20px; /* Espacio adicional para que el gradiente y la sombra se vean bien */
+    background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro));
+    color: var(--azul-oscuro);
+    text-align: center;
+    padding: 20px;
     text-shadow: 
-        0 0 10px #fff,   /* Sombra blanca alrededor para mejorar el contraste */
-        0 0 20px var(--azul-claro), 
-        0 0 25px var(--azul-medio); /* Efecto de neón con sombras más definidas */
+        0 0 10px #fff,
+        0 0 20px var(--azul-claro),
+        0 0 25px var(--azul-medio);
 }
 
-.negrita {
-  font-weight: bold;
-  color: white; /* Esto asegura que el texto sea blanco */
-}
-
-.imagen-principal img {
-  width: 100%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
-  max-width: 600px; /* Limita el tamaño máximo de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
-}
-
-@media screen and (min-width: 768px) {
-  .imagen-principal img {
-    max-width: 80%; /* Reduce el tamaño máximo de la imagen en pantallas grandes */
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .imagen-principal img {
-    max-width: 50%; /* En pantallas aún más grandes, la imagen se reduce aún más */
+/* Estilo responsivo para pantallas pequeñas (celulares) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem; /* Título más pequeño en móvil */
+    padding: 15px 10px;
   }
 }
 
