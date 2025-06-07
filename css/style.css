@@ -336,6 +336,31 @@ a:hover {
     color: var(--azul-oscuro);
 }
 
+/* Estilo para el botón del Metaverso */
+.btn-metaverso {
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro));
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.btn-metaverso:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-claro));
+    box-shadow: 0 0 15px var(--azul-claro);
+}
+
 /* Estilo para el botón de compra en PancakeSwap */
 .btn-comprar {
     background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); /* Gradiente en el fondo */
