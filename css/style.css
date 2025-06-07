@@ -133,18 +133,36 @@ h1 {
 }
 
 /* Estilos para la sección "¿Quién es Neko-chan?" */
-#quien-es-neko.contenido-seccion {
+#quien-es-neko {
+    padding: 40px 20px;
+    background-color: var(--azul-medio);
+    color: var(--gris-claro);
+}
+
+#quien-es-neko h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--azul-claro);
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px var(--azul-claro);
+}
+
+#quien-es-neko .contenido-seccion {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #quien-es-neko .texto {
     flex: 1;
     max-width: 50%;
     padding: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
     text-align: left;
 }
 
@@ -168,21 +186,18 @@ h1 {
 
 /* Responsive */
 @media (max-width: 768px) {
-    #quien-es-neko.contenido-seccion {
+    #quien-es-neko .contenido-seccion {
         flex-direction: column;
         text-align: center;
     }
 
-    #quien-es-neko .texto {
-        max-width: 100%;
-    }
-
+    #quien-es-neko .texto,
     #quien-es-neko .imagen-principal {
         max-width: 100%;
     }
 
     #quien-es-neko h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
 
