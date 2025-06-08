@@ -6,39 +6,6 @@
   <title>Metaverso de Neko</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Reacciones tipo Facebook con íconos Font Awesome */
-    .reacciones {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .reaccion-btn {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      font-size: 1.5em;
-      margin: 0 5px;
-      color: #7f8ff4;
-      transition: transform 0.2s ease, color 0.2s ease;
-    }
-
-    .reaccion-btn:hover {
-      transform: scale(1.2);
-      color: #a7b9ff;
-    }
-
-    .reaccion-btn.active {
-      color: #ff69b4;
-      transform: scale(1.2);
-    }
-
-    .reaccion-contador {
-      font-size: 0.9em;
-      color: #ccc;
-      margin-top: 4px;
-    }
-  </style>
 </head>
 <body>
 
@@ -49,82 +16,128 @@
 
   <section class="galeria">
     <!-- Imagen 1 -->
-   <div class="galeria-item">
-  <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
-  <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
-  <div class="reacciones">
-    <button class="btn-like" onclick="toggleLike('neko1')" data-id="neko1">
-      <span id="icono-neko1">🤍</span> <span id="like-neko1">0</span>
-    </button>
-  </div>
-</div>
+    <div class="galeria-item">
+      <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
+      <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
+      <div class="reacciones" data-id="neko1">
+        <button class="reaccion-btn" onclick="setReaction('neko1', 'like')">💙</button>
+        <button class="reaccion-btn" onclick="setReaction('neko1', 'love')">😍</button>
+        <button class="reaccion-btn" onclick="setReaction('neko1', 'funny')">😂</button>
+        <button class="reaccion-btn" onclick="setReaction('neko1', 'wow')">😮</button>
+        <button class="reaccion-btn" onclick="setReaction('neko1', 'sad')">😢</button>
+        <button class="reaccion-btn" onclick="setReaction('neko1', 'angry')">😡</button>
+        <span id="reaccion-contador-neko1" class="reaccion-contador">💙 0</span>
+      </div>
+    </div>
 
     <!-- Imagen 2 -->
-<div class="galeria-item">
-  <img src="images/neko2.png" alt="Neko-chan futurista">
-  <p>Conectando mundos digitales con estilo y poder kawaii.</p>
-  <div class="reacciones">
-    <button class="btn-like" onclick="toggleLike('neko2')" data-id="neko2">
-      <span id="icono-neko2">🤍</span> <span id="like-neko2">0</span>
-    </button>
-  </div>
-</div>
+    <div class="galeria-item">
+      <img src="images/neko2.png" alt="Neko-chan futurista">
+      <p>Conectando mundos digitales con estilo y poder kawaii.</p>
+      <div class="reacciones" data-id="neko2">
+        <button class="reaccion-btn" onclick="setReaction('neko2', 'like')">💙</button>
+        <button class="reaccion-btn" onclick="setReaction('neko2', 'love')">😍</button>
+        <button class="reaccion-btn" onclick="setReaction('neko2', 'funny')">😂</button>
+        <button class="reaccion-btn" onclick="setReaction('neko2', 'wow')">😮</button>
+        <button class="reaccion-btn" onclick="setReaction('neko2', 'sad')">😢</button>
+        <button class="reaccion-btn" onclick="setReaction('neko2', 'angry')">😡</button>
+        <span id="reaccion-contador-neko2" class="reaccion-contador">💙 0</span>
+      </div>
+    </div>
 
     <!-- Imagen 3 -->
-<div class="galeria-item">
-  <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
-  <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
-  <div class="reacciones">
-    <button class="btn-like" onclick="toggleLike('neko3')" data-id="neko3">
-      <span id="icono-neko3">🤍</span> <span id="like-neko3">0</span>
-    </button>
-  </div>
-</div>
+    <div class="galeria-item">
+      <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
+      <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
+      <div class="reacciones" data-id="neko3">
+        <button class="reaccion-btn" onclick="setReaction('neko3', 'like')">💙</button>
+        <button class="reaccion-btn" onclick="setReaction('neko3', 'love')">😍</button>
+        <button class="reaccion-btn" onclick="setReaction('neko3', 'funny')">😂</button>
+        <button class="reaccion-btn" onclick="setReaction('neko3', 'wow')">😮</button>
+        <button class="reaccion-btn" onclick="setReaction('neko3', 'sad')">😢</button>
+        <button class="reaccion-btn" onclick="setReaction('neko3', 'angry')">😡</button>
+        <span id="reaccion-contador-neko3" class="reaccion-contador">💙 0</span>
+      </div>
+    </div>
 
     <!-- Imagen 4 -->
-<div class="galeria-item">
-  <img src="images/neko4.png" alt="Neko-chan en modo poder digital">
-  <p><em>Su fuego no arde. Brilla.</em></p>
-  <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
-  <div class="reacciones">
-    <button class="btn-like" onclick="toggleLike('neko4')" data-id="neko4">
-      <span id="icono-neko4">🤍</span> <span id="like-neko4">0</span>
-    </button>
-  </div>
-</div>
+    <div class="galeria-item">
+      <img src="images/neko4.png" alt="Neko-chan en modo poder digital">
+      <p><em>Su fuego no arde. Brilla.</em></p>
+      <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
+      <div class="reacciones" data-id="neko4">
+        <button class="reaccion-btn" onclick="setReaction('neko4', 'like')">💙</button>
+        <button class="reaccion-btn" onclick="setReaction('neko4', 'love')">😍</button>
+        <button class="reaccion-btn" onclick="setReaction('neko4', 'funny')">😂</button>
+        <button class="reaccion-btn" onclick="setReaction('neko4', 'wow')">😮</button>
+        <button class="reaccion-btn" onclick="setReaction('neko4', 'sad')">😢</button>
+        <button class="reaccion-btn" onclick="setReaction('neko4', 'angry')">😡</button>
+        <span id="reaccion-contador-neko4" class="reaccion-contador">💙 0</span>
+      </div>
+    </div>
 
     <!-- Imagen 5 -->
-<div class="galeria-item">
-  <img src="images/neko5.png" alt="Neko-chan, la protectora silenciosa del metaverso">
-  <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
-  <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
-  <div class="reacciones">
-    <button class="btn-like" onclick="toggleLike('neko5')" data-id="neko5">
-      <span id="icono-neko5">🤍</span> <span id="like-neko5">0</span>
-    </button>
-  </div>
-</div>
+    <div class="galeria-item">
+      <img src="images/neko5.png" alt="Neko-chan, la protectora silenciosa del metaverso">
+      <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
+      <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
+      <div class="reacciones" data-id="neko5">
+        <button class="reaccion-btn" onclick="setReaction('neko5', 'like')">💙</button>
+        <button class="reaccion-btn" onclick="setReaction('neko5', 'love')">😍</button>
+        <button class="reaccion-btn" onclick="setReaction('neko5', 'funny')">😂</button>
+        <button class="reaccion-btn" onclick="setReaction('neko5', 'wow')">😮</button>
+        <button class="reaccion-btn" onclick="setReaction('neko5', 'sad')">😢</button>
+        <button class="reaccion-btn" onclick="setReaction('neko5', 'angry')">😡</button>
+        <span id="reaccion-contador-neko5" class="reaccion-contador">💙 0</span>
+      </div>
+    </div>
   </section>
 
- <script>
-  const likes = {};
+  <script>
+    const reacciones = {};
 
-  function toggleLike(id) {
-    const btn = document.querySelector(`[data-id="${id}"]`);
-    const icon = document.getElementById(`icono-${id}`);
-    const contador = document.getElementById(`like-${id}`);
+    function setReaction(id, tipo) {
+      if (!reacciones[id]) {
+        reacciones[id] = {
+          actual: null,
+          conteo: 0
+        };
+      }
 
-    if (!likes[id]) likes[id] = 0;
+      const contenedor = document.querySelector(`[data-id="${id}"]`);
+      const botones = contenedor.querySelectorAll(".reaccion-btn");
+      const contador = document.getElementById(`reaccion-contador-${id}`);
 
-    const isActive = btn.classList.toggle('active');
-    likes[id] += isActive ? 1 : -1;
+      // Remover clase activa
+      botones.forEach(btn => btn.classList.remove("active"));
 
-    if (likes[id] < 0) likes[id] = 0;
+      // Si se hace clic en la misma reacción, desactiva
+      if (reacciones[id].actual === tipo) {
+        reacciones[id].actual = null;
+        contador.innerText = "💙 0";
+        return;
+      }
 
-    icon.innerText = isActive ? "💙" : "🤍";
-    contador.innerText = likes[id];
-  }
-</script>
-  
+      // Activar nueva reacción
+      const btn = Array.from(botones).find(b => b.innerText.includes(tipoEmoji(tipo)));
+      if (btn) btn.classList.add("active");
+
+      reacciones[id].actual = tipo;
+      contador.innerText = `${tipoEmoji(tipo)} 1`;
+    }
+
+    function tipoEmoji(tipo) {
+      return {
+        like: "💙",
+        love: "😍",
+        funny: "😂",
+        wow: "😮",
+        sad: "😢",
+        angry: "😡"
+      }[tipo] || "💙";
+    }
+  </script>
+
 </body>
 </html>
+
