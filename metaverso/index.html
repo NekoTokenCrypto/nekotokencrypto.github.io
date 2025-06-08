@@ -5,6 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metaverso de Neko</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .reacciones {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .btn-like {
+      background-color: transparent;
+      border: none;
+      font-size: 1.4em;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--rosa-kawaii);
+      font-weight: bold;
+    }
+
+    .btn-like:hover {
+      transform: scale(1.2);
+      color: white;
+      text-shadow: 0 0 10px var(--rosa-kawaii);
+    }
+
+    .btn-like span {
+      font-size: 0.9em;
+      background: var(--rosa-kawaii);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
 
@@ -19,7 +53,7 @@
       <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
       <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko1')">💖 Me gusta <span id="like-neko1">0</span></button>
+        <button class="btn-like" onclick="sumarLike('neko1')">💗 Me encanta <span id="like-neko1">0</span></button>
       </div>
     </div>
 
@@ -28,7 +62,7 @@
       <img src="images/neko2.png" alt="Neko-chan futurista">
       <p>Conectando mundos digitales con estilo y poder kawaii.</p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko2')">💖 Me gusta <span id="like-neko2">0</span></button>
+        <button class="btn-like" onclick="sumarLike('neko2')">💗 Me encanta <span id="like-neko2">0</span></button>
       </div>
     </div>
 
@@ -37,7 +71,7 @@
       <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
       <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko3')">💖 Me gusta <span id="like-neko3">0</span></button>
+        <button class="btn-like" onclick="sumarLike('neko3')">💗 Me encanta <span id="like-neko3">0</span></button>
       </div>
     </div>
 
@@ -47,7 +81,7 @@
       <p><em>Su fuego no arde. Brilla.</em></p>
       <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko4')">💖 Me gusta <span id="like-neko4">0</span></button>
+        <button class="btn-like" onclick="sumarLike('neko4')">💗 Me encanta <span id="like-neko4">0</span></button>
       </div>
     </div>
 
@@ -57,7 +91,7 @@
       <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
       <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko5')">💖 Me gusta <span id="like-neko5">0</span></button>
+        <button class="btn-like" onclick="sumarLike('neko5')">💗 Me encanta <span id="like-neko5">0</span></button>
       </div>
     </div>
   </section>
@@ -74,4 +108,5 @@
 
 </body>
 </html>
+
 
