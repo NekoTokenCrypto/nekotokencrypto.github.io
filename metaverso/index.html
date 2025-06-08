@@ -5,38 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metaverso de Neko</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
+    /* Reacciones tipo Facebook con íconos Font Awesome */
     .reacciones {
       text-align: center;
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
-    .btn-like {
+    .reaccion-btn {
       background-color: transparent;
       border: none;
-      font-size: 1.4em;
-      padding: 10px 20px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--rosa-kawaii);
-      font-weight: bold;
+      font-size: 1.5em;
+      margin: 0 5px;
+      color: #7f8ff4;
+      transition: transform 0.2s ease, color 0.2s ease;
     }
 
-    .btn-like:hover {
+    .reaccion-btn:hover {
       transform: scale(1.2);
-      color: white;
-      text-shadow: 0 0 10px var(--rosa-kawaii);
+      color: #a7b9ff;
     }
 
-    .btn-like span {
+    .reaccion-btn.active {
+      color: #ff69b4;
+      transform: scale(1.2);
+    }
+
+    .reaccion-contador {
       font-size: 0.9em;
-      background: var(--rosa-kawaii);
-      color: white;
-      padding: 2px 8px;
-      border-radius: 10px;
+      color: #ccc;
+      margin-top: 4px;
     }
   </style>
 </head>
@@ -53,7 +53,8 @@
       <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
       <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko1')">💗 Me encanta <span id="like-neko1">0</span></button>
+        <button class="reaccion-btn" onclick="toggleLike('neko1', this)"><i class="fas fa-heart"></i></button>
+        <div id="contador-neko1" class="reaccion-contador">0</div>
       </div>
     </div>
 
@@ -62,7 +63,8 @@
       <img src="images/neko2.png" alt="Neko-chan futurista">
       <p>Conectando mundos digitales con estilo y poder kawaii.</p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko2')">💗 Me encanta <span id="like-neko2">0</span></button>
+        <button class="reaccion-btn" onclick="toggleLike('neko2', this)"><i class="fas fa-heart"></i></button>
+        <div id="contador-neko2" class="reaccion-contador">0</div>
       </div>
     </div>
 
@@ -71,7 +73,8 @@
       <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
       <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko3')">💗 Me encanta <span id="like-neko3">0</span></button>
+        <button class="reaccion-btn" onclick="toggleLike('neko3', this)"><i class="fas fa-heart"></i></button>
+        <div id="contador-neko3" class="reaccion-contador">0</div>
       </div>
     </div>
 
@@ -81,7 +84,8 @@
       <p><em>Su fuego no arde. Brilla.</em></p>
       <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko4')">💗 Me encanta <span id="like-neko4">0</span></button>
+        <button class="reaccion-btn" onclick="toggleLike('neko4', this)"><i class="fas fa-heart"></i></button>
+        <div id="contador-neko4" class="reaccion-contador">0</div>
       </div>
     </div>
 
@@ -91,7 +95,8 @@
       <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
       <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
       <div class="reacciones">
-        <button class="btn-like" onclick="sumarLike('neko5')">💗 Me encanta <span id="like-neko5">0</span></button>
+        <button class="reaccion-btn" onclick="toggleLike('neko5', this)"><i class="fas fa-heart"></i></button>
+        <div id="contador-neko5" class="reaccion-contador">0</div>
       </div>
     </div>
   </section>
@@ -99,10 +104,11 @@
   <script>
     const likes = {};
 
-    function sumarLike(imagenId) {
-      if (!likes[imagenId]) likes[imagenId] = 0;
-      likes[imagenId]++;
-      document.getElementById(`like-${imagenId}`).innerText = likes[imagenId];
+    function toggleLike(id, el) {
+      if (!likes[id]) likes[id] = 0;
+      const isActive = el.classList.toggle('active');
+      likes[id] += isActive ? 1 : -1;
+      document.getElementById(`contador-${id}`).innerText = likes[id];
     }
   </script>
 
