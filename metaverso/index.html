@@ -53,8 +53,9 @@
       <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
       <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
       <div class="reacciones">
-        <button class="reaccion-btn" onclick="toggleLike('neko1', this)"><i class="fas fa-heart"></i></button>
-        <div id="contador-neko1" class="reaccion-contador">0</div>
+      <button class="btn-like" onclick="toggleLike('neko1')" data-id="neko1">
+  💖 Me gusta <span id="like-neko1">0</span>
+</button>
       </div>
     </div>
 
@@ -63,8 +64,9 @@
       <img src="images/neko2.png" alt="Neko-chan futurista">
       <p>Conectando mundos digitales con estilo y poder kawaii.</p>
       <div class="reacciones">
-        <button class="reaccion-btn" onclick="toggleLike('neko2', this)"><i class="fas fa-heart"></i></button>
-        <div id="contador-neko2" class="reaccion-contador">0</div>
+       <button class="btn-like" onclick="toggleLike('neko1')" data-id="neko2">
+  💖 Me gusta <span id="like-neko1">0</span>
+</button>ador-neko2" class="reaccion-contador">0</div>
       </div>
     </div>
 
@@ -73,8 +75,9 @@
       <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
       <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
       <div class="reacciones">
-        <button class="reaccion-btn" onclick="toggleLike('neko3', this)"><i class="fas fa-heart"></i></button>
-        <div id="contador-neko3" class="reaccion-contador">0</div>
+        <button class="btn-like" onclick="toggleLike('neko1')" data-id="neko3">
+  💖 Me gusta <span id="like-neko1">0</span>
+</button>
       </div>
     </div>
 
@@ -84,8 +87,9 @@
       <p><em>Su fuego no arde. Brilla.</em></p>
       <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
       <div class="reacciones">
-        <button class="reaccion-btn" onclick="toggleLike('neko4', this)"><i class="fas fa-heart"></i></button>
-        <div id="contador-neko4" class="reaccion-contador">0</div>
+        <button class="btn-like" onclick="toggleLike('neko4')" data-id="neko1">
+  💖 Me gusta <span id="like-neko1">0</span>
+</button>
       </div>
     </div>
 
@@ -95,22 +99,31 @@
       <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
       <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
       <div class="reacciones">
-        <button class="reaccion-btn" onclick="toggleLike('neko5', this)"><i class="fas fa-heart"></i></button>
-        <div id="contador-neko5" class="reaccion-contador">0</div>
+       <button class="btn-like" onclick="toggleLike('neko1')" data-id="neko5">
+  💖 Me gusta <span id="like-neko1">0</span>
+</button>
       </div>
     </div>
   </section>
 
-  <script>
-    const likes = {};
+ <script>
+  const likes = {};
 
-    function toggleLike(id, el) {
-      if (!likes[id]) likes[id] = 0;
-      const isActive = el.classList.toggle('active');
-      likes[id] += isActive ? 1 : -1;
-      document.getElementById(`contador-${id}`).innerText = likes[id];
-    }
-  </script>
+  function toggleLike(id) {
+    const btn = document.querySelector(`[data-id="${id}"]`);
+    const span = document.getElementById(`like-${id}`);
+
+    if (!likes[id]) likes[id] = 0;
+
+    const isActive = btn.classList.toggle('active');
+    likes[id] += isActive ? 1 : -1;
+
+    // Evitar números negativos
+    if (likes[id] < 0) likes[id] = 0;
+
+    span.innerText = likes[id];
+  }
+</script>
 
 </body>
 </html>
