@@ -112,3 +112,10 @@ header p {
   background-color: var(--rosa-kawaii);
   color: white;
 }
+
+/* Estilo adicional para el botón activo */
+.btn-like.activo {
+  background-color: var(--azul-claro);
+  color: white;
+  box-shadow: 0 0 12px var(--azul-claro);
+}
