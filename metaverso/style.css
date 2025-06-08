@@ -85,3 +85,30 @@ header p {
     align-items: center;
   }
 }
+
+/* ---------------------------------------------- */
+/* Estilo para la sección de reacciones (Me gusta) */
+/* ---------------------------------------------- */
+
+.reacciones {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Botón estilo "Me gusta" */
+.btn-like {
+  background-color: transparent;
+  border: 2px solid var(--rosa-kawaii);
+  border-radius: 8px;
+  color: var(--rosa-kawaii);
+  font-size: 1em;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover del botón */
+.btn-like:hover {
+  background-color: var(--rosa-kawaii);
+  color: white;
+}
