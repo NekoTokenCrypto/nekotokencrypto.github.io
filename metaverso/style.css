@@ -87,7 +87,7 @@ header p {
 }
 
 /* ---------------------------------------------- */
-/* Estilo para la sección de reacciones (Me gusta) */
+/* Estilo para la sección de reacciones (solo ícono de corazón) */
 /* ---------------------------------------------- */
 
 .reacciones {
@@ -95,27 +95,22 @@ header p {
   margin-top: 10px;
 }
 
-/* Botón estilo "Me gusta" */
+/* Botón estilo solo ícono */
 .btn-like {
-  background-color: transparent;
-  border: 2px solid var(--rosa-kawaii);
-  border-radius: 8px;
-  color: var(--rosa-kawaii);
-  font-size: 1em;
-  padding: 8px 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  color: var(--azul-claro);
+  transition: transform 0.2s ease;
 }
 
-/* Hover del botón */
+/* Efecto al pasar el mouse */
 .btn-like:hover {
-  background-color: var(--rosa-kawaii);
-  color: white;
+  transform: scale(1.1);
 }
 
-/* Estilo adicional para el botón activo */
-.btn-like.activo {
-  background-color: var(--azul-claro);
-  color: white;
-  box-shadow: 0 0 12px var(--azul-claro);
+/* Estilo para cuando está activado (like dado) */
+.btn-like.active {
+  filter: drop-shadow(0 0 5px var(--azul-claro));
 }
