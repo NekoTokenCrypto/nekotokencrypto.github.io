@@ -14,38 +14,64 @@
   </header>
 
   <section class="galeria">
-    <!-- Ejemplo de imagen 1 -->
+    <!-- Imagen 1 -->
     <div class="galeria-item">
-     <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
+      <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
       <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
+      <div class="reacciones">
+        <button class="btn-like" onclick="sumarLike('neko1')">💖 Me gusta <span id="like-neko1">0</span></button>
+      </div>
     </div>
 
-    <!-- Ejemplo de imagen 2 -->
+    <!-- Imagen 2 -->
     <div class="galeria-item">
       <img src="images/neko2.png" alt="Neko-chan futurista">
       <p>Conectando mundos digitales con estilo y poder kawaii.</p>
+      <div class="reacciones">
+        <button class="btn-like" onclick="sumarLike('neko2')">💖 Me gusta <span id="like-neko2">0</span></button>
+      </div>
     </div>
 
+    <!-- Imagen 3 -->
     <div class="galeria-item">
-  <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
-  <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
-</div>
+      <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
+      <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
+      <div class="reacciones">
+        <button class="btn-like" onclick="sumarLike('neko3')">💖 Me gusta <span id="like-neko3">0</span></button>
+      </div>
+    </div>
 
+    <!-- Imagen 4 -->
     <div class="galeria-item">
-  <img src="images/neko4.png" alt="Neko-chan en modo poder digital">
-  <p><em>Su fuego no arde. Brilla.</em></p>
-  <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</p>
-</div>
+      <img src="images/neko4.png" alt="Neko-chan en modo poder digital">
+      <p><em>Su fuego no arde. Brilla.</em></p>
+      <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
+      <div class="reacciones">
+        <button class="btn-like" onclick="sumarLike('neko4')">💖 Me gusta <span id="like-neko4">0</span></button>
+      </div>
+    </div>
 
-<div class="galeria-item">
- <img src="images/neko5.png" alt="Neko-chan, la protectora silenciosa del metaverso">
-  <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
-  <p>Neko-chan no cuestiona el mundo digital:  
-  <strong>lo redefine desde dentro.</strong></p>
-</div>
-
-    <!-- Puedes seguir agregando más bloques similares -->
+    <!-- Imagen 5 -->
+    <div class="galeria-item">
+      <img src="images/neko5.png" alt="Neko-chan, la protectora silenciosa del metaverso">
+      <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
+      <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
+      <div class="reacciones">
+        <button class="btn-like" onclick="sumarLike('neko5')">💖 Me gusta <span id="like-neko5">0</span></button>
+      </div>
+    </div>
   </section>
+
+  <script>
+    const likes = {};
+
+    function sumarLike(imagenId) {
+      if (!likes[imagenId]) likes[imagenId] = 0;
+      likes[imagenId]++;
+      document.getElementById(`like-${imagenId}`).innerText = likes[imagenId];
+    }
+  </script>
 
 </body>
 </html>
+
