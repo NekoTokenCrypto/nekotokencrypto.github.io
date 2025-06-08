@@ -92,25 +92,28 @@ header p {
 
 .reacciones {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
-/* Botón estilo solo ícono */
 .btn-like {
   background: transparent;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
   color: var(--azul-claro);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
-/* Efecto al pasar el mouse */
 .btn-like:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-/* Estilo para cuando está activado (like dado) */
 .btn-like.active {
-  filter: drop-shadow(0 0 5px var(--azul-claro));
+  filter: drop-shadow(0 0 6px var(--azul-claro));
 }
+
