@@ -49,62 +49,61 @@
 
   <section class="galeria">
     <!-- Imagen 1 -->
-    <div class="galeria-item">
-      <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
-      <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
-      <div class="reacciones">
-   <div class="reacciones">
-  <button class="btn-like" onclick="toggleLike('neko1')" data-id="neko1">
-    <span id="icono-neko1">🤍</span> <span id="like-neko1">0</span>
-  </button>
+   <div class="galeria-item">
+  <img src="images/neko1.png" alt="Neko-chan estilo guerrera">
+  <p>Neko-chan protegiendo la red blockchain desde lo alto del metaverso.</p>
+  <div class="reacciones">
+    <button class="btn-like" onclick="toggleLike('neko1')" data-id="neko1">
+      <span id="icono-neko1">🤍</span> <span id="like-neko1">0</span>
+    </button>
+  </div>
 </div>
-    </div>
 
     <!-- Imagen 2 -->
-    <div class="galeria-item">
-      <img src="images/neko2.png" alt="Neko-chan futurista">
-      <p>Conectando mundos digitales con estilo y poder kawaii.</p>
-      <div class="reacciones">
-  <button class="btn-like" onclick="toggleLike('neko2')" data-id="neko1">
-    <span id="icono-neko2">🤍</span> <span id="like-neko2">0</span>
-  </button>
+<div class="galeria-item">
+  <img src="images/neko2.png" alt="Neko-chan futurista">
+  <p>Conectando mundos digitales con estilo y poder kawaii.</p>
+  <div class="reacciones">
+    <button class="btn-like" onclick="toggleLike('neko2')" data-id="neko2">
+      <span id="icono-neko2">🤍</span> <span id="like-neko2">0</span>
+    </button>
+  </div>
 </div>
-    </div>
 
     <!-- Imagen 3 -->
-    <div class="galeria-item">
-      <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
-      <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
-    <div class="reacciones">
-  <button class="btn-like" onclick="toggleLike('neko3')" data-id="neko1">
-    <span id="icono-neko3">🤍</span> <span id="like-neko3">0</span>
-  </button>
+<div class="galeria-item">
+  <img src="images/neko3.png" alt="Neko-chan estilo guerrera digital">
+  <p><strong>No nació con privilegios.</strong> Se forjó entre líneas de código y batallas digitales.</p>
+  <div class="reacciones">
+    <button class="btn-like" onclick="toggleLike('neko3')" data-id="neko3">
+      <span id="icono-neko3">🤍</span> <span id="like-neko3">0</span>
+    </button>
+  </div>
 </div>
-    </div>
 
     <!-- Imagen 4 -->
-    <div class="galeria-item">
-      <img src="images/neko4.png" alt="Neko-chan en modo poder digital">
-      <p><em>Su fuego no arde. Brilla.</em></p>
-      <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
-      <div class="reacciones">
-  <button class="btn-like" onclick="toggleLike('neko4')" data-id="neko1">
-    <span id="icono-neko4">🤍</span> <span id="like-neko4">0</span>
-  </button>
+<div class="galeria-item">
+  <img src="images/neko4.png" alt="Neko-chan en modo poder digital">
+  <p><em>Su fuego no arde. Brilla.</em></p>
+  <p><strong>Cada paso suyo en el metaverso deja una chispa de esperanza.</strong></p>
+  <div class="reacciones">
+    <button class="btn-like" onclick="toggleLike('neko4')" data-id="neko4">
+      <span id="icono-neko4">🤍</span> <span id="like-neko4">0</span>
+    </button>
+  </div>
 </div>
-    </div>
 
     <!-- Imagen 5 -->
-    <div class="galeria-item">
-      <img src="images/neko5.png" alt="Neko-chan, la protectora silenciosa del metaverso">
-      <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
-      <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
-      <div class="reacciones">
-  <button class="btn-like" onclick="toggleLike('neko5')" data-id="neko1">
-    <span id="icono-neko5">🤍</span> <span id="like-neko5">0</span>
-  </button>
+<div class="galeria-item">
+  <img src="images/neko5.png" alt="Neko-chan, la protectora silenciosa del metaverso">
+  <p><em>Silenciosa. Poderosa. Conectada al núcleo de la revolución.</em></p>
+  <p>Neko-chan no cuestiona el mundo digital: <strong>lo redefine desde dentro.</strong></p>
+  <div class="reacciones">
+    <button class="btn-like" onclick="toggleLike('neko5')" data-id="neko5">
+      <span id="icono-neko5">🤍</span> <span id="like-neko5">0</span>
+    </button>
+  </div>
 </div>
-    </div>
   </section>
 
  <script>
@@ -122,15 +121,10 @@
 
     if (likes[id] < 0) likes[id] = 0;
 
-    // Cambiar el ícono de corazón
     icon.innerText = isActive ? "💙" : "🤍";
-
-    // Actualizar contador
     contador.innerText = likes[id];
   }
 </script>
-
+  
 </body>
 </html>
-
-
